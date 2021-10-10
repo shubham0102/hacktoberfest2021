@@ -8,6 +8,10 @@ function validateForm() {
     alert("Name must be filled out");
     return false;
   }
+  if (x.length < 4 || !(/^[A-Z][A-z\s]*$/.test(x))){
+      alert("Invalid name");
+      return false
+  }
 }
 </script>
 </head>
